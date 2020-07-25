@@ -1,5 +1,5 @@
 # K8s
-Golang
+Golang & Linux
 
 # Why use K8s? Decentralization.
 
