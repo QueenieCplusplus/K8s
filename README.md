@@ -77,5 +77,7 @@ its backend-service.yaml includes:
 
     type: NodePort
     ports:
-    -port: 80
-     nodePort: 30001
+    -port: 80 // Node上的物理機阜提供對外訪問能力
+     nodePort: 30001 // 預設為 30000 ~ 32767 為特定範圍
+
+ 
