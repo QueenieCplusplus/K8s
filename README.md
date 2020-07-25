@@ -45,7 +45,7 @@ K8s 能包裝這些微服務，並將系統隨時隨地的搬遷 (GCE 公有雲�
 
 
                      post|update|delete
-               Write ------------------ API/ Back-End --------------- Master Pod
+               Write ------------------ API/ Back-End ---------- Master Pod
 
                                                                    ｜
 
