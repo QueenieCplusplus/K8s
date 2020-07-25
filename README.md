@@ -50,6 +50,8 @@ K8s 能包裝這些微服務，並將系統隨時隨地的搬遷 (GCE 公有雲�
 
     // 6379 port
     server --slaveof ${MASTER_SERVICE_HOST} 6379 
+    
+建立 slave pod 時，系統自動在 container 中生成與 master 相關的環境變數如取得 IP 位置。
                                  
                     
 # Linux 系統
