@@ -91,6 +91,10 @@ its backend-service.yaml includes:
     ports:
     -port: 80 // Node上的物理機阜提供對外訪問能力
      nodePort: 30001 // 預設為 30000 ~ 32767 為特定範圍
+     
+# Pod 組態檔案
+
+https://qhh.me/2019/08/15/Kubernetes-调整-nodePort-端口范围/
 
  
 
