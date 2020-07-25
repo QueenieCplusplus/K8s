@@ -93,3 +93,7 @@ its backend-service.yaml includes:
      nodePort: 30001 // 預設為 30000 ~ 32767 為特定範圍
 
  
+
+
+
+
