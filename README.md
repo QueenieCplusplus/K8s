@@ -49,3 +49,13 @@ K8s 能包裝這些微服務，並將系統隨時隨地的搬遷 (GCE 公有雲�
 建議安裝 VirtualBox 或是 VMware 在本機上虛擬一個 CentOS7 的虛擬機，虛擬機有自己的網路模式連到外部。
 關閉虛擬機內的防火牆，並且利用 yum 安裝 etcd 和 kubernets 軟體。修改設定檔案後，啟動服務！
       
+
+# Activate Serivices
+
+       $systemctl start etcd
+       $systemctl start docker
+       $systemctl start kube-apiserver
+       #systemctl start kube-controller-manager
+       $systemctl start kube-scheduler
+       $systemctl start kubelet
+       $systemctl start kube-proxy
