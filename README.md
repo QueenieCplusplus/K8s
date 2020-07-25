@@ -27,7 +27,7 @@ K8s 能包裝這些微服務，並將系統隨時隨地的搬遷 (GCE 公有雲�
 # 系統部署架構圖
 
 實現讀寫分離。
-如下可能是同一台 Node。
+如下可能是同一台 Node 中的同一台 VM。
 
 
 
@@ -46,9 +46,11 @@ K8s 能包裝這些微服務，並將系統隨時隨地的搬遷 (GCE 公有雲�
                     
 # M/S 主從資料同步
 
-為了使 slave 知道
-                    
-                    
+為了使 slave pod 知道 master pod的 位址，可將 slave image 啟動命令 /run.sh 中寫入：
+
+    // 6379 port
+    server --slaveof ${MASTER_SERVICE_HOST} 6379 
+                                 
                     
 # Linux 系統
 
