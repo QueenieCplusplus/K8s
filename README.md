@@ -73,3 +73,9 @@ K8s 能包裝這些微服務，並將系統隨時隨地的搬遷 (GCE 公有雲�
 # Backend
 
 see comment-poster.php
+its backend-service.yaml includes:
+
+    type: NodePort
+    ports:
+    -port: 80
+     nodePort: 30001
