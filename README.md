@@ -22,6 +22,18 @@ K8s 能包裝這些微服務，並將系統隨時隨地的搬遷 (GCE 公有雲�
 # Cluster
 
 叢集中的 Node 數量可以從數台擴展成數百個的規模，因此系統能應付大量用戶同時存取系統的壓力。
+同 Pod 上的 containers 彼此溝通依靠 Link。
+
+例如：
+
+    $kubectl get services
+
+    Name          IPs              PORTs         
+
+    master        10.254.2.3      6379/TCP       與slave 同Port 不同 IP 是指Pod 不同但服務相同
+    slave         10.254.80.6     6379/TCP       (M/S pods 彼此靠 vSW 溝通)
+    backend       10.254.170.5    80/TCP         與 nodes 們靠 port 300001 溝通，對外訪問則用 port 80，
+                                                 同 IP 不同port為bind
 
 
 # 系統部署架構圖
