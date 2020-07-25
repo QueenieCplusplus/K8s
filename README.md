@@ -94,6 +94,8 @@ its backend-service.yaml includes:
      
 # Pod 組態檔案
 
+路徑：/etc/kubernetes/manifests/kube-apiserver.yaml 
+
 https://qhh.me/2019/08/15/Kubernetes-调整-nodePort-端口范围/
 
  
