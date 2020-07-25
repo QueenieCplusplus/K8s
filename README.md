@@ -29,14 +29,15 @@ K8s 能包裝這些微服務，並將系統隨時隨地的搬遷 (GCE 公有雲�
 
 
 
-                    Write ------ API/ Back-End --------------- Master Node
+                     post|update|delete
+               Write ------------------ API/ Back-End --------------- Master Node
 
                                                                    ｜
 
                                                                 Sync 同步
 
                                                                    ｜
-
+                            get
                     Read  ------ Front-End ------------------- [Slave Node 1, ...]
                     
                     
